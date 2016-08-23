@@ -1,0 +1,21 @@
+<div class="mui-container">
+
+<form (submit)="addLog()">
+  <legend>Add Log</legend>
+  <div class="mui-textfield">
+    <input type="text" name="LogText" placeholder="Log.." [(ngModel)]="LogText">
+  </div>
+  <div class="mui-textfield">
+    <input type="text" name="LogDev" placeholder="developer.." [(ngModel)]="LogDev">
+  </div>
+  <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
+</form>
+
+<div *ngFor="let log of logs" class="">
+  <div class="mui-panel">
+    <strong>{{log.text}}</strong>: By {{log.developer}} at {{log.date | date:"shortTime"}}
+    <button class="mui-btn mui-btn--danger" (click)="deleteLog(log._id)">x</button>
+  </div>
+</div>
+
+</div>

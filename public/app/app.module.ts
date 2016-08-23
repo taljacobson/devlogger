@@ -6,7 +6,7 @@ import { HttpModule,HTTP_PROVIDERS }     from '@angular/http';
 import { FeathersService } from "./services/feathers.service";
 
 import { AppComponent }  from './components/app/app.component';
-import { LogsComponent } from "./components/logs/logs.component";
+import { LogsComponent } from "./components/log/log.component";
 
 
 

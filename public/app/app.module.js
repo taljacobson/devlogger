@@ -14,7 +14,7 @@ var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 var feathers_service_1 = require("./services/feathers.service");
 var app_component_1 = require('./components/app/app.component');
-var logs_component_1 = require("./components/logs/logs.component");
+var log_component_1 = require("./components/log/log.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -27,7 +27,7 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
-                logs_component_1.LogsComponent
+                log_component_1.LogsComponent
             ],
             providers: [
                 feathers_service_1.FeathersService,
