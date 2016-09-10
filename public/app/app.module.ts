@@ -8,8 +8,6 @@ import { FeathersService } from "./services/feathers.service";
 import { AppComponent }  from './components/app/app.component';
 import { LogsComponent } from "./components/log/log.component";
 
-
-
 @NgModule({
   imports:      [
     BrowserModule,
