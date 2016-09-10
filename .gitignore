@@ -1,6 +1,7 @@
 # Logs
 logs
 *.log
+!logs.component.ts
 
 # Runtime data
 pids
