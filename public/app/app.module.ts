@@ -1,7 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
-import { HttpModule,HTTP_PROVIDERS }     from '@angular/http';
+import { HttpModule }     from '@angular/http';
 
 import { FeathersService } from "./services/feathers.service";
 
@@ -21,8 +21,7 @@ import { LogsComponent } from "./components/log/log.component";
     LogsComponent
   ],
   providers: [
-    FeathersService,
-    HTTP_PROVIDERS
+    FeathersService
   ],
   bootstrap:    [ AppComponent ]
 })
